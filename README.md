@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub/faq-accordion-card-challenge-with-scss-g8NDUoy8V)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-card-challenge-with-scss-g8NDUoy8V)
 - Live Site URL: [Netlify](https://rd-challenge-faq-accordion.netlify.app/)
 
 ## My process
