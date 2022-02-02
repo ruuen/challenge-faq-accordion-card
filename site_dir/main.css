@@ -67,6 +67,7 @@ body {
 .faq__heading {
   text-align: center;
   font-size: 2em;
+  color: #1d1e35;
 }
 
 .faq__accordion {
@@ -96,9 +97,11 @@ body {
 .faq__item-heading {
   font-size: 0.85em;
   font-weight: 400;
+  color: #4a4b5e;
 }
 .faq__item-heading--active {
   font-weight: 700;
+  color: #1d1e35;
 }
 .faq__item-heading:hover {
   color: #f47c57;
@@ -117,4 +120,64 @@ body {
 }
 .faq__item-copy--hidden {
   display: none;
+}
+
+@media screen and (min-width: 1250px) {
+  body {
+    padding: 0;
+  }
+
+  .page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .faq {
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background: no-repeat left -280% center/85% url(./images/bg-pattern-desktop.svg), #fff;
+  }
+  .faq::after {
+    content: url(./images/illustration-box-desktop.svg);
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    height: fit-content;
+    z-index: 1;
+  }
+
+  .faq__illustration-wrapper {
+    margin: 0;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .faq__illustration {
+    margin: 0 15% 0 -15%;
+  }
+
+  .faq__illustration-background {
+    display: none;
+  }
+
+  .faq__body {
+    padding: 4rem 6rem 6rem 0;
+    width: 50%;
+  }
+
+  .faq__heading {
+    text-align: left;
+  }
+
+  .faq__accordion {
+    padding: 1.5rem 0 0 0;
+  }
 }

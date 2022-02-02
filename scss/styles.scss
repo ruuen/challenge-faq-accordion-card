@@ -40,6 +40,7 @@ body {
 .faq__heading {
   text-align: center;
   font-size: 2em;
+  color: var.$clr-primary-text-900;
 }
 
 .faq__accordion {
@@ -70,9 +71,11 @@ body {
 .faq__item-heading {
   font-size: 0.85em;
   font-weight: var.$font-weight-primary;
+  color: var.$clr-neutral-text-500;
 
   &--active {
     font-weight: var.$font-weight-bold;
+    color: var.$clr-primary-text-900;
   }
 
   &:hover {
