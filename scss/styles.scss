@@ -1,3 +1,102 @@
-.faq__item-copy--hidden {
-  display: none;
+@use "variables" as var;
+
+body {
+  background: linear-gradient(180deg, var.$clr-bg-violet, var.$clr-bg-blue);
+  // temp padding shift
+  padding: 1.5rem;
+}
+
+.faq {
+  background: var.$clr-white;
+  padding: 1.5rem;
+  border-radius: 25px;
+  margin-top: 40%;
+  // box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 46px 27px -12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 46px 27px -12px rgba(0, 0, 0, 0.1),
+    11px 41px 30px -18px rgba(0, 0, 0, 0.1);
+
+  // box-shadow: -12px 19px 23px 2px rgba(0, 0, 0, 0.05), 12px -3px 22px -3px rgba(0, 0, 0, 0.05),
+  //   0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 32px 40px 0px rgba(0, 0, 0, 0.1), 0px 25px 41px -3px rgba(0, 0, 0, 0.1);
+}
+
+.faq__illustration-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: -45% auto 0 auto;
+  width: 80%;
+}
+
+.faq__illustration {
+  position: relative;
+  z-index: 2;
+}
+
+.faq__illustration-background {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin: -30% auto auto auto;
+}
+
+.faq__body {
+  padding: 1.2em 0 0 0;
+}
+
+.faq__heading {
+  text-align: center;
+  font-size: 2em;
+}
+
+.faq__accordion {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.faq__accordion-item {
+  position: relative;
+  padding: 1.1rem 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid var.$clr-divider;
+    width: 100%;
+    padding-top: 1.1rem;
+  }
+}
+
+.faq__item-heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__item-heading {
+  font-size: 0.85em;
+  font-weight: var.$font-weight-primary;
+
+  &--active {
+    font-weight: var.$font-weight-bold;
+  }
+
+  &:hover {
+    color: var.$clr-text-hover;
+    cursor: pointer;
+  }
+}
+
+.faq__item-heading-icon--active {
+  transform: rotateZ(180deg);
+}
+
+.faq__item-copy {
+  font-size: 0.75em;
+  line-height: 1.6;
+  padding: 0.5rem 2rem 0 0;
+  color: var.$clr-neutral-text-100;
+
+  &--hidden {
+    display: none;
+  }
 }
